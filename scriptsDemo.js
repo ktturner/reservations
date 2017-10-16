@@ -64,8 +64,9 @@ var randomWeekday = (Math.floor(Math.random() * 6));
 //figure out day of week given to us by the numbers
 //0 = Sunday, 6 = Saturday... need to use our own logic to find out the values
 //use switch statement to associate name with number for weekday
+var dayToday = new Date ();
 var dayOfWeekName; //value to be assigned
-switch (randomWeekday) {
+switch (dayToday.getDay()) {
   case 0:
     dayOfWeekName = 'Sunday' ;
   break;
@@ -89,16 +90,61 @@ switch (randomWeekday) {
   break;
 }
 
-//alert(dayOfWeekName);
+var nameOfMonth; //value to be assigned
+switch (dayToday.getMonth()) {
+  case 00:
+    nameOfMonth = 'January' ;
+  break;
+  case 01:
+    nameOfMonth = 'February';
+  break;
+  case 02:
+    nameOfMonth = 'March';
+  break;
+  case 03:
+    nameOfMonth = 'April';
+  break;
+  case 04:
+    nameOfMonth = 'May';
+  break;
+  case 05:
+    nameOfMonth = 'June';
+  break;
+  case 06:
+    nameOfMonth = 'July';
+  break;
+  case 07:
+  nameOfMonth = 'August'
+  break;
+  case 08:
+  nameOfMonth = 'September'
+  break;
+  case 09:
+  nameOfMonth = 'October'
+  break;
+  case 10:
+  nameOfMonth = 'November'
+  break;
+  case 11:
+  nameOfMonth = 'December'
+  break;
+}
+
+
+window.onload = function (){
+var dateMessage = "Welcome. Today is " + nameOfMonth + dayToday.getDate() + ", " + dayToday.getFullYear() + ". Happy " + dayOfWeekName +"!";;
+document.getElementById("dynamicMessage").innerHTML = dateMessage;}
+
+
 
 //welcome message for reservations page
 
 
 
 //use conditional logic to check for weekend
-var today  = new Date();
+/*var today  = new Date();
 var isWeekend  = (today.getDay() >= 5 || today.getDay() == 0);
-alert("Today is " + today+ " Number: " + today.getDay() + " isWeekend: " + isWeekend);
+alert("Today is " + today+ " Number: " + today.getDay() + " isWeekend: " + isWeekend);*/
 
 
 /*create a function that starts with a date, and a number of days to add to the Date

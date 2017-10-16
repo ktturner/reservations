@@ -11,17 +11,28 @@
   <hr />
   Number of Guests in Party:<br />
   <input type="text" name="numberOfGuests" id="numberOfGuests"><br />
+</br>
+  <p>Room Type:</p>
+  <select name="roomType">
+  <option value="0">-Select-</option>
+  <option value="1">Economy</option>
+  <option value="2">Standard</option>
+  <option value="3">Deluxe</option>
+</select>
+</br>
+</br>
+Duration of Stay (in days):<br />
+  <input type="text" name="lengthOfStay" id="lengthOfStay"><br>
+  <br />
+  Check-In Date:<br />
+    <input type="text" name="startDate" id="startDate"><br>
+    <br />
   <hr />
   <button onclick="checkAvailability()">Check Availability</button>
   <button onclick="makeReservation()">Make Reservation</button>
-<hr />
-Start Date:<br />
-  <input type="text" name="startDate" id="startDate"><br>
-  <br />
-  Length of Stay: <br />
-  <input type="text" name="lengthOfStay" id="lengthOfStay"><br>
-  <button onclick="endDate()">End of Stay</button>
+
 
   <p id="availableRooms"></p>
+
 </body>
 </html>
