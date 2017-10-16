@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservations</title>
+  <!--script src="scripts.js" type="text/javascript"></script-->
+  <script src="scriptsDemo.js" type="text/javascript"></script>
+</head>
+<body>
+  <h1>Sleep and Eat - Reservations</h1>
+  <p id="dynamicMessage"></p>
+  <hr />
+  Number of Guests in Party:<br />
+  <input type="text" name="numberOfGuests" id="numberOfGuests"><br />
+  <hr />
+  <button onclick="checkAvailability()">Check Availability</button>
+  <button onclick="makeReservation()">Make Reservation</button>
+<hr />
+Start Date:<br />
+  <input type="text" name="startDate" id="startDate"><br>
+  <br />
+  Length of Stay: <br />
+  <input type="text" name="lengthOfStay" id="lengthOfStay"><br>
+  <button onclick="endDate()">End of Stay</button>
+
+  <p id="availableRooms"></p>
+</body>
+</html>

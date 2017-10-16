@@ -1,0 +1,29 @@
+Ex. 9/26/2017 need end date for 15 day stay
+Need to know:
+number of days in a month
+Is it a leap year
+ -list years in array
+ -leap year base year - check every 4 years
+ -year divisible by 4, but not 100
+
+ Step 1: Get day of Date
+ Step 2: Add number of days values
+ Step 3: Compare new value with end of month
+ Step 4: Keep if before or on last day of month
+ Step 5: Get number of days past the last day of month
+  5a: increment month
+  5b: set month to January and increment year after December
+
+Syntax for loop
+
+//Start is integer to begin
+//condition is when to complete the loop --> will do as long as condition is false
+//statements to repeat included in curly braces
+for (index = start; condition = stop; increment) {
+}
+
+
+//functions: named, anonymous, immediately invoked
+
+//create a function that starts with a date, and a number of days to add to the Date
+in order to generate an end date.

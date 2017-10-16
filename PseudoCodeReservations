@@ -1,0 +1,36 @@
+Display Max Capacity message
+
+Program Check Availability button
+  Compare #ofGuests to #bedsAvailable
+    Display success/fail message
+
+Program Make Reservation Button
+  Compare #Guests to #bedsAvailable
+    Display fail message/ make reservation
+
+Make Reservation
+  Calculate beds needed
+  Subtract beds needed from Total Beds
+  Display message
+    Success, Rooms Booked, Rooms Available
+
+Function
+  compare Guests with Beds ==> yes/no
+  display fail message
+
+   -------------------------------------
+
+Check Availability
+-input # of guests
+-calculate # of rooms needed
+-compare to rooms available
+  -yes/no
+  -display appropriate message
+
+Make Reservation
+-Check available
+  -yes/no
+  -if no - display appropriate message
+  -if yes - make the reservation
+    -remove rooms
+    -display new totals 
