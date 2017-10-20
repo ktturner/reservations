@@ -153,7 +153,7 @@ in order to generate an end date. Create an IIFE*/
 var endDate
 (function() {
   //take a begining date and add a number of days to that date.
-  var startDate = new Date(2020, 01, 26);
+  var startDate = new Date(2020, 01, 26); 
   var lengthOfStay = 15;
   var addStayDays = startDate.getDate() + lengthOfStay;
 

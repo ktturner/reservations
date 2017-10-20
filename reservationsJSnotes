@@ -27,3 +27,37 @@ for (index = start; condition = stop; increment) {
 
 //create a function that starts with a date, and a number of days to add to the Date
 in order to generate an end date.
+
+
+DOM Notes 10/17
+
+DOM stores the information needed to load webpages in the form of Nodes in a tree
+--> Top: WINDOW (put stuff on) & DOCUMENT (get stuff off) [Document child, window parent]
+  --> html is included in DOM in tree-like structure
+      --> parent, siblings, children
+
+ex.               window
+                    |
+                document
+                    |
+                    html
+      |                         |
+    head                        body
+|     |       |           |    |    |
+title meta script       h1    p   button
+
+
+DOM is great bc presents page, but also allows manipulation of page by querying DOM (getElementById)
+  can manipulate DOM but MUST know how to query the DOM in order to manipulate
+
+manipulation:
+1. change information ex. Changing welcome message on hotel program
+2. add new elements (this makes the page interactive) ex. based on mouse-over, click, etc.
+3. remove elements (alter based on event that happens) ex. loading, hover, mouse, etc.
+
+KEY in query -- must know structure, hierarchy, where items are located
+
+
+use DOM to adjust page based on activity with user --> write out scenarios !!Due next Monday
+ex. not enough room, change message text to red
+    enough room, show make reservation button
